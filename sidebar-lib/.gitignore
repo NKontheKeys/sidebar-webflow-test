@@ -1,18 +1,10 @@
-# === general ignores ===
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-pnpm-debug.log*
-
-# node modules
+# node modules in your library
 node_modules/
 
-# Build outputs (ignore all dist folders by default)
+# everything in dist by default
 dist/
-sidebar-lib/dist/
 
-# === but allow your UMD bundle in sidebar-lib/dist ===
-!/sidebar-lib/dist/sidebar.bundle.umd.js
+# except our bundle file
+!dist/sidebar.bundle.umd.js
+
 

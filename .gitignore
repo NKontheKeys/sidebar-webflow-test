@@ -1,29 +1,21 @@
-# Logs
+# === general ignores ===
 logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 pnpm-debug.log*
-lerna-debug.log*
 
-# Dependencies
-node_modules
+node_modules/
 
-# Only ignore top‑level dist folders (not subfolders)
-# so that sidebar-lib/dist stays tracked
+# Only ignore the top‑level dist folder, not sidebar-lib/dist
 /dist
 /dist-ssr
 
-# Editor directories and files
+# Editor dirs
 .vscode/*
 !.vscode/extensions.json
 .idea
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
 
-# Un‑ignore our production UMD bundle in sidebar-lib
+# === allow our sidebar UMD bundle ===
 !/sidebar-lib/dist/sidebar.bundle.umd.js

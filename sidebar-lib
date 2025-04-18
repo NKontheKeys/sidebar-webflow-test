@@ -1,6 +1,0 @@
-# Create a new folder called "sidebar-lib" with the React+TS template
-npx create-vite@latest sidebar-lib -- --template react-ts
-cd sidebar-lib
-
-# Install dependencies
-npm install
